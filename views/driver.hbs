@@ -1,0 +1,37 @@
+<h2>Driver:</h2>
+<div class="driver-stats">
+{{#each driver1}}
+<div class="driver1">
+<div class="main-info">
+<img src="{{this.image}}">
+<h3>{{this.name}}</h3>
+</div>
+<div id="stats">
+    <p>Grands Prix Won: {{this.grands_prix_entered}}</p>
+    <p>Career Points: </p>
+
+</div>
+</div>
+{{/each}}
+
+<div class="differential">
+    <p class="height"></p>
+    <p class="bold">Comparing A to B:</p>
+
+</div>
+
+
+{{#each driver2}}
+<div class="driver2">
+<div class="main-info">
+<img src="{{this.image}}">
+<h3>{{this.name}}</h3>
+</div>
+<div id="stats">
+    <p>Grands Prix Won: {{this.grands_prix_entered}}</p>
+    <p>Career Points: </p>
+
+</div>
+</div>
+{{/each}}
+</div>
