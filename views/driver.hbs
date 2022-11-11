@@ -1,3 +1,4 @@
+<button><a href='/'>Go Back</a></button>
 <h2>Driver:</h2>
 <div class="driver-stats">
 {{#each driver1}}
@@ -7,19 +8,31 @@
 <h3>{{this.name}}</h3>
 </div>
 <div id="stats">
-    <p>Grands Prix Won: {{this.grands_prix_entered}}</p>
-    <p>Career Points: </p>
+    <p>Nationality: {{this.nationality}}</p>
+    <p>Grands Prix entered: {{this.grands_prix_entered}}</p>
+    <p>Podiums: {{this.podiums}}</p>
+    <p>Podium percentage: {{this.podium_percentage}} %</p>
+    <p>World Championships: {{this.world_championships}}</p>
+    <p>Career Points: {{this.career_points}} </p>
 
 </div>
 </div>
 {{/each}}
 
-<div class="differential">
+{{#each statsDiff}}
+<div class="differential" style="margin-top:7px;">
     <p class="height"></p>
-    <p class="bold">Comparing A to B:</p>
+    <p class="bold" id="stats-dom">Comparing A to B:</p>
+    <p style="color:white;">VOID</p>
+    <p style="text-align:center;">{{this.grands_prix_entered}}</p>
+    <p style="text-align:center;">{{this.podiums}}</p>
+    <p style="text-align:center;">{{this.percentage}}</p>
+    <p style="text-align:center;">{{this.championships}}</p>
+    <p style="color:white;">VOID</p>
+    <p style="text-align:center;">{{this.points}}</p>
 
 </div>
-
+{{/each}}
 
 {{#each driver2}}
 <div class="driver2">
@@ -28,8 +41,12 @@
 <h3>{{this.name}}</h3>
 </div>
 <div id="stats">
-    <p>Grands Prix Won: {{this.grands_prix_entered}}</p>
-    <p>Career Points: </p>
+    <p>Nationality: {{this.nationality}}</p>
+    <p>Grands Prix entered: {{this.grands_prix_entered}}</p>
+    <p>Podiums: {{this.podiums}}</p>
+    <p>Podium percentage: {{this.podium_percentage}} %</p>
+    <p>World Championships: {{this.world_championships}}</p>
+    <p>Career Points: {{this.career_points}} </p>
 
 </div>
 </div>
